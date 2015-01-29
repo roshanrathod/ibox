@@ -40,13 +40,13 @@ public class AppIntegrationTest {
 
 		try{
 		    GoogleCredential credential = new  GoogleCredential.Builder()
-		    									.setTransport(httpTransport)
-		    									.setJsonFactory(jsonFactory)
-		    									.setServiceAccountId("1005000173774-0jrohgud65kge93nc96e22t1sef6vnh1"
-		    											+ "@developer.gserviceaccount.com")
-		    									.setServiceAccountScopes(Collections.singleton(DriveScopes.DRIVE))
-		    									.setServiceAccountPrivateKeyFromP12File(new File("ibox-87fe3bf1bffb.p12"))
-		    									.build();
+		    				.setTransport(httpTransport)
+		    				.setJsonFactory(jsonFactory)
+		    				.setServiceAccountId("1005000173774-0jrohgud65kge93nc96e22t1sef6vnh1"
+		    							+ "@developer.gserviceaccount.com")
+		    				.setServiceAccountScopes(Collections.singleton(DriveScopes.DRIVE))
+		    				.setServiceAccountPrivateKeyFromP12File(new File("ibox-87fe3bf1bffb.p12"))
+		    				.build();
 
 		     googleDriveClient = new Drive.Builder(httpTransport, jsonFactory, credential).setApplicationName("ibox").build();
 		        
