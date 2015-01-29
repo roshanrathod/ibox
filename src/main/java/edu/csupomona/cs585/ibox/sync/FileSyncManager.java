@@ -3,7 +3,7 @@ package edu.csupomona.cs585.ibox.sync;
 import java.io.File;
 import java.io.IOException;
 
-public interface FileSyncManager {
+public interface FileSyncManager{
 
 	public void addFile(File localFile) throws IOException;
 
