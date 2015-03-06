@@ -46,21 +46,6 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.pitest</groupId>
-				<artifactId>pitest-maven</artifactId>
-				<version>LATEST</version>
-				<configuration>
-					<targetClasses>
-						<param>edu.csupomona.cs585.ibox</param>
-					</targetClasses>
-					<targetTests>
-						<param>edu.csupomona.cs585</param>
-					</targetTests>
-				</configuration>
-			</plugin>
-
-
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.6</version>
